@@ -284,7 +284,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   errorCard: {
-    width: '90%',
+    // width: '90%',
     maxWidth: 400,
     padding: 24,
     borderRadius: 16,
