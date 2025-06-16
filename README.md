@@ -172,16 +172,6 @@ npx json-server db.json
 - Implement error scenarios
 - Test platform-specific features
 
-## Future Enhancements
-1. User Authentication
-2. Payment Integration
-3. Push Notifications
-4. Offline Support
-5. Image Upload
-6. Reviews and Ratings
-7. Advanced Search Filters
-8. Favorite Properties
-
 ## Contributing
 1. Fork the repository
 2. Create a feature branch
