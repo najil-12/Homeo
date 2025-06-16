@@ -1,50 +1,190 @@
-# Welcome to your Expo app 👋
+# Homeo - Property Rental App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern property rental application built with React Native and Expo, featuring a beautiful UI and seamless user experience.
 
-## Get started
+## Features
 
-1. Install dependencies
+### 1. Property Listing
+- Browse available properties with detailed information
+- Search properties by title, address, city, or state
+- View property cards with key information:
+  - Property title
+  - Monthly rent
+  - Location
+  - Key features
+  - Property images
+  - Booking status
 
-   ```bash
-   npm install
-   ```
+### 2. Property Details
+- Comprehensive property information display:
+  - High-quality property images with thumbnail gallery
+  - Detailed property description
+  - Monthly rent
+  - Complete address
+  - Interactive map with property location
+  - List of property features with icons
+  - Booking status indicator
 
-2. Start the app
+### 3. Booking System
+- Date selection for property booking:
+  - Check-in date picker
+  - Check-out date picker
+  - Date validation (check-out must be after check-in)
+  - Booking confirmation
+  - Booking status tracking
 
-   ```bash
-   npx expo start
-   ```
+### 4. Booking Management
+- View all bookings in a dedicated tab
+- Booking details include:
+  - Property information
+  - Check-in and check-out dates
+  - Booking status (confirmed, pending, cancelled)
+  - Quick access to property details
 
-In the output, you'll find options to open the app in a
+### 5. User Interface
+- Modern and clean design
+- Dark/Light mode support
+- Custom fonts (Poppins)
+- Responsive layout
+- Platform-specific UI elements
+- Smooth animations and transitions
+- Loading states and error handling
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 6. Navigation
+- Tab-based navigation:
+  - Home (Property listings)
+  - Bookings
+  - Profile
+- Stack navigation for detailed views
+- Back navigation support
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Technical Implementation
 
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Setup and Installation
 ```bash
-npm run reset-project
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+# Start the JSON server
+npx json-server db.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Project Structure
+```
+├── app/                    # Main application code
+│   ├── (tabs)/            # Tab-based navigation screens
+│   ├── property-details/  # Property details screen
+│   └── _layout.tsx        # Root layout configuration
+├── components/            # Reusable components
+├── constants/            # App constants and theme
+├── hooks/               # Custom React hooks
+├── services/           # API services
+├── store/             # State management
+└── types/             # TypeScript type definitions
+```
 
-## Learn more
+### 3. Key Technologies
+- React Native with Expo
+- TypeScript for type safety
+- React Query for data fetching
+- Zustand for state management
+- React Navigation for routing
+- NativeWind for styling
+- Expo Router for file-based routing
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. State Management
+- Zustand for global state
+- React Query for server state
+- Local state with React hooks
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 5. API Integration
+- RESTful API endpoints for:
+  - Property listings
+  - Property details
+  - Booking management
+  - User profiles
+- Error handling and loading states
+- Data caching with React Query
 
-## Join the community
+### 6. UI Components
+- Custom components:
+  - PropertyCard
+  - SearchBar
+  - DatePicker
+  - BookingCard
+  - ThemedView
+  - PoppinsText
+- Platform-specific components
+- Responsive layouts
+- Loading and error states
 
-Join our community of developers creating universal apps.
+### 7. Styling
+- Custom theme system
+- Dark/Light mode support
+- Platform-specific styles
+- Responsive design
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 8. Data Flow
+1. Property Listing:
+   - Fetch properties on app load
+   - Filter properties based on search
+   - Display in a scrollable list
+
+2. Property Details:
+   - Load property details on navigation
+   - Display comprehensive information
+   - Handle booking process
+
+3. Booking Management:
+   - Create new bookings
+   - Track booking status
+   - View booking history
+
+## Development Guidelines
+
+### 1. Code Style
+- Follow TypeScript best practices
+- Use functional components
+- Implement proper error handling
+- Write clean and maintainable code
+
+### 2. Component Structure
+- Keep components small and focused
+- Use proper prop typing
+- Implement proper error boundaries
+- Follow React best practices
+
+### 3. State Management
+- Use Zustand for global state
+- Implement React Query for server state
+- Keep local state minimal
+- Follow proper state update patterns
+
+### 4. Testing
+- Write unit tests for components
+- Test API integration
+- Implement error scenarios
+- Test platform-specific features
+
+## Future Enhancements
+1. User Authentication
+2. Payment Integration
+3. Push Notifications
+4. Offline Support
+5. Image Upload
+6. Reviews and Ratings
+7. Advanced Search Filters
+8. Favorite Properties
+
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request

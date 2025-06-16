@@ -1,0 +1,203 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "title": "Modern Downtown Apartment",
+      "price": 2500,
+      "location": {
+        "address": "123 Main St",
+        "city": "San Francisco",
+        "state": "CA",
+        "coordinates": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        }
+      },
+      "features": [
+        "2 Bedrooms",
+        "2 Bathrooms",
+        "Parking",
+        "Pool"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Luxury Beach House",
+      "price": 5000,
+      "location": {
+        "address": "456 Ocean Ave",
+        "city": "Malibu",
+        "state": "CA",
+        "coordinates": {
+          "latitude": 34.0259,
+          "longitude": -118.7798
+        }
+      },
+      "features": [
+        "4 Bedrooms",
+        "3 Bathrooms",
+        "Beachfront",
+        "Private Pool"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Mountain View Cabin",
+      "price": 1800,
+      "location": {
+        "address": "789 Pine Trail",
+        "city": "Lake Tahoe",
+        "state": "CA",
+        "coordinates": {
+          "latitude": 39.0968,
+          "longitude": -120.0324
+        }
+      },
+      "features": [
+        "3 Bedrooms",
+        "2 Bathrooms",
+        "Fireplace",
+        "Mountain View",
+        "Hot Tub"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1",
+        "https://images.unsplash.com/photo-1523217582562-09d0def993a6"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Urban Loft Studio",
+      "price": 1200,
+      "location": {
+        "address": "321 Market St",
+        "city": "San Francisco",
+        "state": "CA",
+        "coordinates": {
+          "latitude": 37.7879,
+          "longitude": -122.4075
+        }
+      },
+      "features": [
+        "1 Bedroom",
+        "1 Bathroom",
+        "High Ceilings",
+        "City View",
+        "Gym Access"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
+        "https://images.unsplash.com/photo-1505843513577-22bb7d21e455"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Desert Oasis Villa",
+      "price": 3500,
+      "location": {
+        "address": "567 Palm Canyon Dr",
+        "city": "Palm Springs",
+        "state": "CA",
+        "coordinates": {
+          "latitude": 33.8303,
+          "longitude": -116.5453
+        }
+      },
+      "features": [
+        "3 Bedrooms",
+        "3 Bathrooms",
+        "Private Pool",
+        "Desert View",
+        "Golf Course Access"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Vineyard Estate",
+      "price": 4200,
+      "location": {
+        "address": "890 Wine Valley Rd",
+        "city": "Napa",
+        "state": "CA",
+        "coordinates": {
+          "latitude": 38.5025,
+          "longitude": -122.2654
+        }
+      },
+      "features": [
+        "4 Bedrooms",
+        "4 Bathrooms",
+        "Wine Cellar",
+        "Vineyard Views",
+        "Chef's Kitchen"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3"
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "a3f4",
+      "propertyId": "1",
+      "userId": "user1",
+      "checkIn": "2025-06-16",
+      "checkOut": "2025-06-17",
+      "status": "confirmed"
+    },
+    {
+      "id": "a38d",
+      "propertyId": "2",
+      "userId": "user1",
+      "checkIn": "2025-06-16",
+      "checkOut": "2025-06-17",
+      "status": "confirmed"
+    },
+    {
+      "id": "f76a",
+      "propertyId": "3",
+      "userId": "user1",
+      "checkIn": "2025-06-16",
+      "checkOut": "2025-06-17",
+      "status": "confirmed"
+    },
+    {
+      "id": "a00d",
+      "propertyId": "4",
+      "userId": "user1",
+      "checkIn": "2025-06-17",
+      "checkOut": "2025-06-19",
+      "status": "confirmed"
+    },
+    {
+      "id": "8c21",
+      "propertyId": "5",
+      "userId": "user1",
+      "checkIn": "2025-06-16",
+      "checkOut": "2025-06-20",
+      "status": "confirmed"
+    }
+  ],
+  "profile": {
+    "id": "user1",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "bookings": [
+      "1"
+    ]
+  }
+}
