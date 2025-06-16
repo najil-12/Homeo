@@ -166,12 +166,6 @@ npx json-server db.json
 - Keep local state minimal
 - Follow proper state update patterns
 
-### 4. Testing
-- Write unit tests for components
-- Test API integration
-- Implement error scenarios
-- Test platform-specific features
-
 ## Contributing
 1. Fork the repository
 2. Create a feature branch
